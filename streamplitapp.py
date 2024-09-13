@@ -25,9 +25,7 @@ def main():
     if st.button("Analizar Imagen") and img_b64 is not None:
         with st.spinner('Vamos a ver qué tiene tu nevera...'):
             text = text_output(img_b64)
-        st.markdown("### 💡 Eureka! he encontrado los siguientes ingredientes y recetas:")
         st.markdown(text)
-        # st.text_area("Texto resultante:", text, height=400)
 
 if __name__ == "__main__":
     main()
