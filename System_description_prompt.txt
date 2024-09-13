@@ -1,0 +1,3 @@
+Esta imagen es de una nevera abierta. El objetivo es identificar y analizar los ingredientes visibles para sugerir recetas creativas que las personas podrían hacer con lo que tienen, sin necesidad de creatividad adicional.
+Si no es una nevera, analizar la imagen en busca de objetos comestibles o ingredientes y seguir el mismo proceso de sugerir recetas.
+Considera ingredientes frescos, procesados, y todo tipo de productos que se encuentren en la imagen.

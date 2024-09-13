@@ -4,9 +4,16 @@ import requests
 import streamlit as st
 
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-image_descipcion_prompt = st.secrets["IMAGE_PROMPT"]
-system_prompt = st.secrets["MACHINE_PROMPT"]
 gpt_model = "gpt-4o"
+_ROOT = Path(__file__).parent
+
+
+with open (f"{_ROOT}/image_description_promt.txt", "r") as text_file:
+    image_descipcion_prompt=text_file.read()
+
+with open(f"{_ROOT}/System_description_prompt.txt", "r") as text_file:
+    system_prompt = text_file.read()
+
 
 # Function to encode the image
 def encode_image(image_path):
