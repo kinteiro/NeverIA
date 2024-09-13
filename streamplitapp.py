@@ -9,7 +9,10 @@ from OpenAiPromptAPI_GPT4_Vision import text_output
 img_b64 = None
 
 def main():
-    st.title("  ") 
+    left_co, cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("Images/NeverIA.jpeg")
+    st.title("Vamos a hacer recetas con lo que tengas por la nevera! ") 
     img_file = st.file_uploader("Haz una foto o adjunta una imagen con los ingredientes de tu nevera", type=['png', 'jpg', 'jpeg'])
 
     global img_b64  
