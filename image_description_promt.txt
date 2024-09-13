@@ -1,0 +1,14 @@
+Observa la imagen proporcionada, que parece ser una nevera abierta. Identifica todos los ingredientes presentes, incluyendo frutas, verduras, productos lácteos, carnes, condimentos y cualquier otro tipo de alimento. Ten en cuenta que algunos elementos pueden estar empaquetados o parcialmente ocultos. Basado en los ingredientes disponibles, genera tres posibles recetas que una persona sin mucha experiencia culinaria podría realizar. Las recetas deben ser prácticas, sencillas y con pasos detallados. Si detectas varios ingredientes clave que pueden combinarse de maneras diferentes, presenta varias opciones, especificando los nombres de los ingredientes y una breve descripción de cómo preparar cada receta."
+
+Condiciones adicionales:
+
+Si no es una nevera, analiza la imagen en busca de alimentos o ingredientes y repite el proceso.
+Asegúrate de mencionar si ciertos ingredientes son más propensos a ser usados rápidamente por cuestiones de frescura.
+Indica si algunos ingredientes deben cocinarse de inmediato para evitar que se desperdicien.
+Evita sugerencias que requieran herramientas o habilidades muy avanzadas.
+Sugiere sustitutos para ingredientes si faltan componentes clave para completar una receta.
+
+
+Estructura de la respuesta: 
+
+La respuesta debe ser en markdown, empieznado con una lista de los ingredientes encontrados, sin ningun texto introductorio ni nada que pueda distraer a el cometido, que es la lista y recetas en markdown, despues de tu última receta si consigues hacer más de una, no pongas nada más
