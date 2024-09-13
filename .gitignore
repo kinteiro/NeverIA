@@ -163,4 +163,6 @@ Pipfile
 Pipfile.lock
 *.local*
 .streamlit/
-```
+*prompt*.txt
+# System_description_prompt.txt
+# image_description_promt.txt
