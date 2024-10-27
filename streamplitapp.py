@@ -3,6 +3,7 @@ import base64
 from PIL import Image
 # from datetime import datetime
 from OpenAiPromptAPI_GPT4_Vision import text_output
+from generate_pdf import pass_pdf_to_download
 
 
 # Variable global para almacenar el base64 de la imagen
@@ -26,6 +27,15 @@ def main():
         with st.spinner('Vamos a ver qué tiene tu nevera...'):
             text = text_output(img_b64)
         st.markdown(text)
+        # Descargar el archivo PDF directamente desde el buffer
+        if "💡"  in text:
+            st.download_button(
+                label="Descargar receta en PDF",
+                data=pass_pdf_to_download(text, imagen=img),
+                file_name="reporte.pdf",
+                mime="application/pdf", 
+                icon="📄"
+            )
 
 if __name__ == "__main__":
     main()
